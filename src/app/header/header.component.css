@@ -40,6 +40,8 @@
     border: 1px solid blueviolet;
     height: 35px;
     border-right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .nav .nav-search button{
