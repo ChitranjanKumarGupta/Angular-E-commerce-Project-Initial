@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { SignUp } from '../data-type';
+import { login, SignUp } from '../data-type';
 import { BehaviorSubject } from 'rxjs';
 import { Router} from '@angular/router'
 
@@ -26,5 +26,11 @@ export class SellerService {
       this.isSellerLoggedIn.next(true);
       this.router.navigate(['seller-home']);
     }
+  }
+
+  userLogin(data:login){
+    console.log(data);
+    // api call code will be there
+    
   }
 }
